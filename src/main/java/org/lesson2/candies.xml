@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<candies>
+    <candie name = "Batonchyk">
+        <type>chocolate</type>
+        <taste>kakao</taste>
+        <swetnes>height</swetnes>
+    </candie>
+    <candie name = "Roshen">
+        <type>candy</type>
+        <taste>peach</taste>
+        <swetnes>low</swetnes>
+    </candie>
+    <candie name = "Irys">
+        <type>iris</type>
+        <taste>milk</taste>
+        <swetnes>very height</swetnes>
+    </candie>
+</candies>
