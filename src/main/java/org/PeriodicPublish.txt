@@ -1,0 +1,8 @@
+
+        Title: Daily News
+        Monthly: Every week
+        Type: paper
+        Pages: 25
+        Gloss: no
+        Color: yes
+        Index: DN1290

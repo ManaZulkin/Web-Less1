@@ -1,0 +1,11 @@
+<paper>
+  <title>string</title>
+  <type>Magazine</type>
+  <monthly>weekly</monthly>
+  <chars>
+    <color>yes</color>
+    <pages>100</pages>
+    <gloss>yes</gloss>
+    <index>string</index>
+  </chars>
+</paper>

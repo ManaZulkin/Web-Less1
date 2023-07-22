@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="paper" type="paperType"/>
+  <xs:complexType name="charsType">
+    <xs:sequence>
+      <xs:element type="color" name="color"/>
+      <xs:element type="pages" name="pages"/>
+      <xs:element type="gloss" name="gloss"/>
+      <xs:element type="xs:string" name="index"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="paperType">
+    <xs:sequence>
+     <xs:element type="xs:string" name="title"/>
+      <xs:element type="type" name="type"/>
+      <xs:element type="monthly" name="monthly"/>
+      <xs:element type="charsType" name="chars"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Magazine"/>
+      <xs:enumeration value="Paper"/>
+      <xs:enumeration value="Booklet"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="pages">
+    <xs:restriction base="xs:integer">
+      <xs:maxExclusive value="101"/>
+      <xs:minExclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="monthly">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="monthly"/>
+      <xs:enumeration value="weekly"/>
+      <xs:enumeration value="cvartal"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="gloss">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="yes"/>
+      <xs:enumeration value="no"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="color">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="yes"/>
+      <xs:enumeration value="no"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
