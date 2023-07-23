@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<xsl:stylesheet
+        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+        version="1.0" >
+    <xsl:output method="html" encoding="UTF-8"/>
+
+    <xsl:template match="/">
+        <html>
+            <body>
+                <table border="1">
+                    <tr>
+                        <th>Title </th>
+                        <th>Monthly </th>
+                        <th>Type </th>
+                        <th>Pages </th>
+                        <th>Gloss </th>
+                        <th>Color </th>
+                        <th>Index </th>
+                        <tr>
+                            <td><xsl:value-of select="paper/title"/></td>
+                            <td><xsl:value-of select="paper/monthly"/></td>
+                            <td><xsl:value-of select="paper/tipe"/></td>
+                            <td><xsl:value-of select="paper/chars/pages"/></td>
+                            <td><xsl:value-of select="paper/chars/gloss"/></td>
+                            <td><xsl:value-of select="paper/chars/color"/></td>
+                            <td><xsl:value-of select="paper/chars/index"/></td>
+                        </tr>
+                    </tr>
+                </table>
+            </body>
+</html>
+            </xsl:template>
+</xsl:stylesheet>

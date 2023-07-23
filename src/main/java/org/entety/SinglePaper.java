@@ -1,7 +1,5 @@
 package org.entety;
 
-import java.util.Enumeration;
-
 public class SinglePaper {
     String title, monthly, tipe, color, gloss, index;
     int pages = 25;

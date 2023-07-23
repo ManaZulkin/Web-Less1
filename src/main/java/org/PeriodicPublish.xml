@@ -2,7 +2,7 @@
 <paper>
     <title>Daily News</title>
     <monthly>Every week</monthly>
-    <type>paper</type>
+    <tipe>paper</tipe>
     <chars>
         <color>yes</color>
         <pages>25</pages>
